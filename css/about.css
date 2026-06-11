@@ -1,0 +1,33 @@
+@import url(./fonts.css);
+
+.main__title {
+    position: absolute;
+    color: #fff;
+    color: rgba(106, 207, 23, 0.7);
+    font-family: 'RaleWay';
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.main__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.main__decs {
+    margin-top: 30px;
+    color: #fff;
+    text-align: justify;
+    font-family: 'RaleWay';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    width: 100%;
+    padding: 0;
+}
+
+.f-top {
+    margin-top: 30px;
+}

@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .food {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 55px;
+        flex-direction: column;
+        transform: scaleY(0);
+        justify-content: center;
+        transform-origin: 0 0;
+        
+    }
+
+    .nav__link {
+        padding: 10px 20px;
+        display: block;
+        width: 113px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .header__burger:focus ~ .nav__menu {
+        transition: 0.5s;
+        transform: scaleY(1);
+    }
+
+    .box__link {
+        padding: 23px 66px;
+        font-size: 40px;
+    }
+
+    .box__link_two {
+        padding: 12px 60px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .adver {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .box__links{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box__link_two {
+        padding: 15px 60px;
+        font-size: 18px;
+    }
+
+    .box__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav__menu {
+        right: 0px;
+    }
+
+    .nav__link {
+        text-align: right;
+    }
+
+    .tab__burger {
+        display: block;
+        
+        
+    }
+
+    .tab {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        
+        flex-direction: column;
+        transform: scaleY(0);
+        justify-content: center;
+        transform-origin: 0 0;
+        background: rgba(41, 41, 41, 0.9);
+        transition: 0.5s;
+        gap: 0;
+    }
+
+    .tab__link {
+        border-bottom: 1px solid #000;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .tab__burger:focus ~ .tab {
+        transform: scaleY(1);
+        
+    }
+}
+
+
+@media (max-width: 460px) {
+    .box__title {
+        font-size: 48px;
+    }
+
+    .adver {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .adver__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .food {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .end__content {
+        justify-content: center;
+    }
+}
